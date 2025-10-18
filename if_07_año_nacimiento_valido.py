@@ -1,8 +1,8 @@
 
 from datetime import datetime
 try:
-    anio = int(input("Ingresa tu anio de nacimiento: "))
+    año = int(input("Ingresa tu año de nacimiento: "))
     actual = datetime.now().year
-    print("valido" if 1900 < anio < actual else "no valido")
+    print("valido" if 1900 < año < actual else "no valido")
 except ValueError:
     print("Entrada invalida.")
